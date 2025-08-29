@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
+import "normalize.css";
+import "swiper/css";
 
-const geistSans = Geist({
+import Header from "./layouts/header/header";
+
+const manropeSans = Manrope({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  subsets: ["cyrillic"],
 });
 
 export const metadata: Metadata = {
@@ -23,8 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="ru">
+      <body className={manropeSans.className}>
+        <Header />
         {children}
       </body>
     </html>

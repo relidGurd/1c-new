@@ -1,0 +1,93 @@
+.text-12-regular {
+  font-size: 12px;
+  font-weight: 400;
+}
+.text-12-bold {
+  font-size: 12px;
+  font-weight: 700;
+}
+.text-12-semibold {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.text-16-regular {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 400;
+}
+.text-16-bold {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 700;
+}
+.text-16-semibold {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 600;
+}
+
+.text-18-regular {
+  font-size: clamp(16px, 2.5vw, 18px);
+  font-weight: 400;
+}
+.text-18-bold {
+  font-size: clamp(16px, 2.5vw, 18px);
+  font-weight: 700;
+}
+.text-18-semibold {
+  font-size: clamp(16px, 2.5vw, 18px);
+  font-weight: 600;
+}
+
+.text-24-regular {
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 400;
+}
+.text-24-bold {
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 700;
+}
+.text-24-semibold {
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 600;
+}
+
+.text-32-regular {
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 400;
+}
+.text-32-bold {
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 700;
+}
+.text-32-semibold {
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 600;
+}
+
+.text-64-regular {
+  font-size: clamp(28px, 8vw, 64px);
+  font-weight: 400;
+}
+.text-64-bold {
+  font-size: clamp(28px, 8vw, 64px);
+  font-weight: 700;
+}
+.text-64-semibold {
+  font-size: clamp(28px, 8vw, 64px);
+  font-weight: 600;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: var(--primary-red-color);
+}
+
+.text-green {
+  color: var(--primary-green-color);
+}
+
+.text-black {
+  color: black;
+}

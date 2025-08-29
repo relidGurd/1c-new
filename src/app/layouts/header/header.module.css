@@ -1,0 +1,79 @@
+.header_logoMain {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+}
+
+.header_logoSection {
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+  display: block;
+  width: 90px;
+}
+
+.header_logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header_nav {
+  height: 100%;
+}
+
+.header_ul {
+  display: flex;
+  height: 100%;
+  gap: 16px;
+  align-items: center;
+}
+
+.header_li {
+  color: var(--primary-red-color);
+  font-weight: 700;
+}
+
+.header_menuMain {
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.header_buttonMain {
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.header_button {
+  width: auto;
+  height: auto;
+  background-color: var(--primary-red-color);
+  padding: 16px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.header_button:hover {
+  background-color: white;
+  border: 1px solid var(--primary-red-color);
+  color: var(--primary-red-color);
+  font-weight: 700;
+}
+.header_button:active {
+  background-color: #ff7a7a;
+  border: 1px solid #ff7a7a;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .header_logoMain {
+    display: none;
+  }
+}
