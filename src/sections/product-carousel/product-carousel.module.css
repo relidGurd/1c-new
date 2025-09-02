@@ -1,0 +1,16 @@
+.productCarousel_container {
+  padding: 48px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productCarousel_swiperMain {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .productCarousel_container {
+    padding: 24px;
+  }
+}

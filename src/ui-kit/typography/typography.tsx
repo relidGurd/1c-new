@@ -6,7 +6,7 @@ interface ITypography {
   variant: "h1" | "h2" | "h3" | "p" | "span";
   size: "12" | "16" | "18" | "24" | "32" | "64";
   weight?: "regular" | "bold" | "semibold";
-  color?: "white" | "red" | "green" | "black";
+  color?: "white" | "red" | "green" | "black" | "text-gray";
   className?: string;
   children: React.ReactNode;
 }
@@ -15,7 +15,7 @@ const Typography: React.FC<ITypography> = ({
   variant,
   children,
   size,
-  weight,
+  weight = "regular",
   color = "black",
   className,
 }) => {

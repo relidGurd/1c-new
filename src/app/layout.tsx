@@ -3,8 +3,8 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import "normalize.css";
 import "swiper/css";
-
-import Header from "./layouts/header/header";
+import Header from "@/layouts/header/header";
+import Footer from "@/layouts/footer/footer";
 
 const manropeSans = Manrope({
   variable: "--font-geist-sans",
@@ -26,6 +26,7 @@ export default function RootLayout({
       <body className={manropeSans.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

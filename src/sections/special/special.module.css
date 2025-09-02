@@ -1,0 +1,28 @@
+.special_container {
+  padding: 48px;
+}
+
+.special_main {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.special_main__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.special_main__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .special_container {
+    padding: 24px;
+  }
+}

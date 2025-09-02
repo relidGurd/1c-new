@@ -1,0 +1,39 @@
+.offers_section {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 16px;
+  padding: 48px;
+}
+
+.offers_btnContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.offers_btn {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-red-color);
+  padding: 16px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .offers_section {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .offers_section {
+    grid-template-columns: 1fr;
+  }
+
+  .offers_btnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
