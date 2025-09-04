@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import { strapi_site_url } from "../../../test";
 
-async function getProduct(slug: string, qwery?: string) {
-  const url = `${strapi_site_url}/api/product/${slug}?${qwery}`;
+async function getSubCategories(qwery?: string) {
+  const url = `${strapi_site_url}/api/categories?${qwery}`;
 
   try {
     const response = await fetch(url);
@@ -14,12 +14,12 @@ async function getProduct(slug: string, qwery?: string) {
     const result = await response.json();
     return result;
   } catch (error: any) {
-    notFound();
+    // notFound();
   }
 }
 
-async function getProducts(qwery?: string) {
-  const url = `${strapi_site_url}/api/products?${qwery}`;
+async function getSubCategory(slug: string, qwery?: string) {
+  const url = `${strapi_site_url}/api/subcategory/${slug}?${qwery}`;
 
   try {
     const response = await fetch(url);
@@ -31,8 +31,8 @@ async function getProducts(qwery?: string) {
     const result = await response.json();
     return result;
   } catch (error: any) {
-    notFound();
+    // notFound();
   }
 }
 
-export { getProduct, getProducts };
+export { getSubCategories, getSubCategory };

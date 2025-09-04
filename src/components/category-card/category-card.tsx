@@ -4,9 +4,17 @@ import Typography from "@/ui-kit/typography/typography";
 import styles from "./category-card.module.css";
 import Image from "next/image";
 
-const CategoryCard = () => {
+const CategoryCard = ({
+  title,
+  description,
+  image,
+}: {
+  title: string;
+  description?: string;
+  image?: string;
+}) => {
   return (
-    <li className={styles.category_card}>
+    <div className={styles.category_card}>
       <div className={styles.category_imageContainer}>
         <Image
           className={styles.category_image}
@@ -23,19 +31,19 @@ const CategoryCard = () => {
           size="24"
           weight="bold"
         >
-          1С:ERP Управление предприятием
+          {title}
         </Typography>
-        <Typography
-          className={styles.category_description}
-          variant="p"
-          size="18"
-        >
-          Решение «1С:Управление предприятием общепита» предназначено для
-          автоматизации процессов управления деятельностью независимых и сетевых
-          предприятий общественного питания различных форматов и концепций
-        </Typography>
+        {description && (
+          <Typography
+            className={styles.category_description}
+            variant="p"
+            size="18"
+          >
+            {description}
+          </Typography>
+        )}
       </div>
-    </li>
+    </div>
   );
 };
 

@@ -2,8 +2,9 @@
 import Typography from "@/ui-kit/typography/typography";
 import styles from "./offers.module.css";
 import CategoryCard from "@/components/category-card/category-card";
+import Link from "next/link";
 
-const Offers = () => {
+const Offers = ({ data }: { data: any }) => {
   return (
     <section className="main-container">
       <div className={styles.offers_section}>
@@ -21,10 +22,13 @@ const Offers = () => {
           </div>
         </div>
         <ul>
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
+          {data.map((el: any) => (
+            <li key={el.id}>
+              <Link href={`/subcategory/${el.slug}`}>
+                <CategoryCard title={el.title} description={el.description} />
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

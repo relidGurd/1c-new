@@ -1,0 +1,14 @@
+.subcategory_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+}
+
+@media screen and (max-width: 1086px) {
+  .subcategory_list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

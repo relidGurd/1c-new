@@ -5,6 +5,7 @@
   padding: 16px 0px;
   border-bottom: 1px solid var(--primary-bg-color);
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .category_imageContainer {
@@ -18,6 +19,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.category_card:hover {
+  border-bottom: 1px solid var(--primary-green-color);
 }
 
 @media screen and (max-width: 1086px) {

@@ -1,6 +1,8 @@
 import { getProduct } from "@/api/product/product";
 import { qweryProduct } from "./helper";
 import DynamicProductPage from "@/components/dynamic-pages/product/dynamic-product-page";
+import Tab from "@/components/tab-product/tab-product";
+import TabProduct from "@/components/tab-product/tab-product";
 
 const ProductPage = async ({
   params,
@@ -13,7 +15,7 @@ const ProductPage = async ({
 
   return (
     <div>
-      <DynamicProductPage components={data.tab} />
+      <TabProduct items={data.tab} />
     </div>
   );
 };
