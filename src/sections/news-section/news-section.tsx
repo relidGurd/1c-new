@@ -16,7 +16,7 @@ const NewsSection = () => {
         >
           Новости 1С
         </Typography>
-        <ul className={styles.news_section__grid}>
+        {/* <ul className={styles.news_section__grid}>
           <li>
             <ProductCard />
           </li>
@@ -38,7 +38,7 @@ const NewsSection = () => {
           <li>
             <ProductCard />
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

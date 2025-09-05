@@ -1,5 +1,4 @@
 import type { NextConfig } from "next";
-import { strapi_site_url } from "./test";
 
 const nextConfig: NextConfig = {
   images: {

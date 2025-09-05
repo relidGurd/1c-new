@@ -14,7 +14,7 @@ async function getSubCategories(qwery?: string) {
     const result = await response.json();
     return result;
   } catch (error: any) {
-    // notFound();
+    notFound();
   }
 }
 
@@ -31,7 +31,7 @@ async function getSubCategory(slug: string, qwery?: string) {
     const result = await response.json();
     return result;
   } catch (error: any) {
-    // notFound();
+    notFound();
   }
 }
 

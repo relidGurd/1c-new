@@ -6,11 +6,7 @@ import ContactUsSection from "@/sections/contact-us-section/contact-us-section";
 import CategoryCard from "@/components/category-card/category-card";
 import Link from "next/link";
 
-const CategoryPage = async ({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) => {
+const CategoryPage = async () => {
   const { data } = await getCategories(qweryCategory);
 
   return (

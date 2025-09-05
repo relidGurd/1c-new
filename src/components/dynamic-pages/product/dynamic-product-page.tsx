@@ -7,6 +7,8 @@ const DynamicProductPage = ({ components }: { components: any }) => {
         return <div key={index}>news</div>;
       case "all.tab-description":
         return <div key={index}>description</div>;
+      default:
+        return null;
     }
   });
 };

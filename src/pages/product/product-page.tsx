@@ -7,12 +7,7 @@ import Typography from "@/ui-kit/typography/typography";
 import Image from "next/image";
 import { strapi_site_url } from "../../../test";
 
-type Props = {
-  title?: string;
-};
-
 const ProductClientPage: React.FC<any> = ({ product }: { product: any }) => {
-  console.log(product.image);
   return (
     <div className={styles.container}>
       <section className="main-container">
@@ -32,13 +27,17 @@ const ProductClientPage: React.FC<any> = ({ product }: { product: any }) => {
         <div className={styles.product_main__grid}>
           <div>
             <div className={styles.product_image__container}>
-              <Image
-                className={styles.product_image}
-                src={`${strapi_site_url}${product.image.url}`}
-                width={1000}
-                height={800}
-                alt={product.alternativeText ? product.alternativeText : ""}
-              />
+              {product.image.url ? (
+                <Image
+                  className={styles.product_image}
+                  src={`${strapi_site_url}${product.image.url}`}
+                  width={1000}
+                  height={800}
+                  alt={product.alternativeText ? product.alternativeText : ""}
+                />
+              ) : (
+                "Нет изображения"
+              )}
             </div>
             <div className={styles.product_prices}>
               <Typography variant="span" size="24" weight="bold">
