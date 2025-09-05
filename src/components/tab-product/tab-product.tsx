@@ -6,21 +6,32 @@ import DynamicProductPage from "../dynamic-pages/product/dynamic-product-page";
 import ComponentsSelect, {
   getTabLabel,
 } from "../components-select/components-select";
+import classNames from "classnames";
 
 type Props = {
   items: [];
   tabButton?: string;
   tabInfo?: string;
+  className?: string;
 };
 
-const TabProduct: React.FC<Props> = ({ items, tabButton, tabInfo }) => {
+const TabProduct: React.FC<Props> = ({
+  items,
+  tabButton,
+  tabInfo,
+  className,
+}) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className={styles.container}>
-      <div>
+      <div className={classNames(styles.tab_btn__primary)}>
         {items.map((el: any, index: number) => (
-          <button key={index} onClick={() => setActiveIndex(index)}>
+          <button
+            className={className}
+            key={index}
+            onClick={() => setActiveIndex(index)}
+          >
             {getTabLabel(el)}
           </button>
         ))}

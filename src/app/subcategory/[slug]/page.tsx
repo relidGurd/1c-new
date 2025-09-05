@@ -53,7 +53,7 @@ const SubCategoryPage = async ({
           {data.map((el: any) => (
             <li key={el.id}>
               <Link href={`/product/${el.slug}`}>
-                <ProductCard />
+                <ProductCard product={el} />
               </Link>
             </li>
           ))}

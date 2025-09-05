@@ -18,7 +18,12 @@ const Offers = ({ data }: { data: any }) => {
           </Typography>
           <div className={styles.offers_btnContainer}>
             <button className={styles.offers_btn}>Заказать консультацию</button>
-            <button className={styles.offers_btn}>Смотреть все</button>
+            <Link
+              className={styles.offers_btn}
+              href={"/category/programmnye-produkty-1-s"}
+            >
+              Смотреть все
+            </Link>
           </div>
         </div>
         <ul>

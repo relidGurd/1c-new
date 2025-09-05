@@ -1,0 +1,5 @@
+.tab_btn__primary {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}

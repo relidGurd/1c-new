@@ -21,16 +21,18 @@ const Header = () => {
           <nav className={styles.header_nav}>
             <ul className={styles.header_ul}>
               <li className={styles.header_li}>
-                <Link href={"/"}>Продукты</Link>
+                <Link href={"/category/programmnye-produkty-1-s"}>
+                  Программные продукты 1С
+                </Link>
               </li>
               <li className={styles.header_li}>
-                <Link href={"/"}>Продукты</Link>
+                <Link href={"/"}>О нас</Link>
               </li>
               <li className={styles.header_li}>
-                <Link href={"/"}>Продукты</Link>
+                <Link href={"/"}>Партнерам</Link>
               </li>
               <li className={styles.header_li}>
-                <Link href={"/"}>Продукты</Link>
+                <Link href={"/"}>Контакты</Link>
               </li>
             </ul>
           </nav>

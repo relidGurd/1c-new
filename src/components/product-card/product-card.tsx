@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./product-card.module.css";
 import Typography from "@/ui-kit/typography/typography";
 
-const ProductCard = () => {
+const ProductCard = ({ product }: { product: any }) => {
   return (
     <div className={styles.product_card}>
       <div className={styles.product_card__imageContainer}>
@@ -19,11 +19,11 @@ const ProductCard = () => {
       <div className={styles.product_card__info}>
         <div>
           <Typography color="green" variant="span" size="12" weight="bold">
-            Рубрика
+            {product.article}
           </Typography>
           <div>
             <Typography variant="p" size="24" weight="bold">
-              Рубрика
+              {product.title}
             </Typography>
             <Typography variant="p" size="16" weight="regular">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
@@ -35,7 +35,7 @@ const ProductCard = () => {
         </div>
 
         <Typography color="text-gray" variant="span" size="12" weight="bold">
-          22.02.2025
+          Артикул: {product.article}
         </Typography>
       </div>
     </div>

@@ -5,15 +5,15 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductCard from "@/components/product-card/product-card";
 
-const ProductCarousel = () => {
+const ProductCarousel = ({ products }: { products: any }) => {
   return (
     <section className="main-container">
       <div className={styles.productCarousel_container}>
         <div>
           <Typography variant="h2" size="64" weight="bold">
-            Кассовое оборудование
+            Популярные продукты
           </Typography>
-          <Link href={"/"}>Смотреть все</Link>
+          <Link href={"/category/programmnye-produkty-1-s"}>Смотреть все</Link>
         </div>
         <div className={styles.productCarousel_swiperMain}>
           <Swiper
@@ -29,18 +29,13 @@ const ProductCarousel = () => {
               },
             }}
           >
-            <SwiperSlide tag="li">
-              <ProductCard />
-            </SwiperSlide>
-            <SwiperSlide tag="li">
-              <ProductCard />
-            </SwiperSlide>
-            <SwiperSlide tag="li">
-              <ProductCard />
-            </SwiperSlide>
-            <SwiperSlide tag="li">
-              <ProductCard />
-            </SwiperSlide>
+            {products.map((el: any) => (
+              <SwiperSlide tag="li">
+                <Link href={`/product/${el.slug}`}>
+                  <ProductCard product={{ ...el }} />
+                </Link>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
