@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://1c-future.ru",
     images: [
       {
-        url: "https://1c-future.ru/og-img.jpg", // абсолютный URL
+        url: "https://1c-future.ru/og.jpg", // абсолютный URL
         width: 1200,
         height: 630,
         alt: "1C-Future | Купите 1С ",
