@@ -25,12 +25,15 @@ const ProductCard = ({ product }: { product: any }) => {
             <Typography variant="p" size="24" weight="bold">
               {product.title}
             </Typography>
-            <Typography variant="p" size="16" weight="regular">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              repellat maiores deleniti incidunt at omnis quibusdam perferendis,
-              minima officiis totam? Quisquam voluptatum nesciunt quidem quae
-              reprehenderit quibusdam reiciendis aut error!
-            </Typography>
+            {product.description && (
+              <Typography
+                className={styles.product_card__description}
+                variant="p"
+                size="16"
+                weight="regular">
+                {product.description}
+              </Typography>
+            )}
           </div>
         </div>
 

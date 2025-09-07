@@ -54,3 +54,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.product_card__description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Количество строк */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
