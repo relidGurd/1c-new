@@ -7,7 +7,11 @@ import Typography from "@/ui-kit/typography/typography";
 import Image from "next/image";
 import { strapi_site_url } from "../../../test";
 
-const ProductClientPage: React.FC<any> = ({ product }: { product: any }) => {
+const ProductClientPage: React.FC<any> = ({ product }) => {
+  if (!product) {
+    return <div>Товар не найден</div>;
+  }
+
   return (
     <div className={styles.container}>
       <section className="main-container">
@@ -15,8 +19,7 @@ const ProductClientPage: React.FC<any> = ({ product }: { product: any }) => {
           className={styles.title_product}
           variant="h1"
           weight="bold"
-          size="64"
-        >
+          size="64">
           {product.title}
         </Typography>
         <Typography variant="span" color="text-gray" weight="bold" size="16">
