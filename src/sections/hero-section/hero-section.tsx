@@ -23,8 +23,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
             autoplay={{
               delay: 5000,
             }}
-            loop={true}
-          >
+            loop={true}>
             <SwiperSlide tag="li">
               <div className={styles.hero_slideItem}>
                 <div className={styles.hero_slideImageContainer}>
@@ -41,8 +40,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                       variant="h2"
                       color="white"
                       weight="bold"
-                      size="64"
-                    >
+                      size="64">
                       Заголовок 1
                     </Typography>
                     <Typography
@@ -50,13 +48,8 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                       color="white"
                       weight="regular"
                       size="24"
-                      className={styles.hero_description}
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Alias amet possimus adipisci itaque assumenda minus, ea
-                      rerum commodi minima dolore magni provident temporibus
-                      nesciunt dignissimos odit voluptatem ab accusantium
-                      officia.
+                      className={styles.hero_description}>
+                      Программное обеспечение облегчающее жизнь
                     </Typography>
                   </div>
 
@@ -66,8 +59,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                         <button className={styles.hero_slideBtn}>
                           Оставить заявку
                         </button>
-                      }
-                    >
+                      }>
                       <ConsultationForm />
                     </Popup>
                   </div>
@@ -90,8 +82,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                       variant="h2"
                       color="white"
                       weight="bold"
-                      size="64"
-                    >
+                      size="64">
                       Заголовок 1
                     </Typography>
                     <Typography
@@ -99,8 +90,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                       color="white"
                       weight="regular"
                       size="24"
-                      className={styles.hero_description}
-                    >
+                      className={styles.hero_description}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Alias amet possimus adipisci itaque assumenda minus, ea
                       rerum commodi minima dolore magni provident temporibus
@@ -115,8 +105,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                         <button className={styles.hero_slideBtn}>
                           Оставить заявку
                         </button>
-                      }
-                    >
+                      }>
                       <ConsultationForm />
                     </Popup>
                   </div>
