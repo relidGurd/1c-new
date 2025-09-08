@@ -49,7 +49,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                       weight="regular"
                       size="24"
                       className={styles.hero_description}>
-                      Программное обеспечение облегчающее жизнь!
+                      Программное обеспечение облегчающее жизнь!!
                     </Typography>
                   </div>
 
