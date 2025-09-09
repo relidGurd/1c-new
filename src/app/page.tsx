@@ -20,10 +20,12 @@ export default async function Home() {
   });
   const { data: popular_products } = await getProducts(popularProductsQwery);
 
+  const subcategories = data.subcategories.splice(0, 4);
+
   return (
     <main>
       <HeroSection hero_product={popular_products[0]} />
-      <Offers data={data.subcategories} />
+      <Offers data={subcategories} />
       <Special />
       <ProductCarousel products={popular_products} />
       <ContactUsSection />

@@ -41,6 +41,8 @@ const SubCategoryPage = async ({
   const { data } = await getProducts(qweryCategory);
   const { data: subcategory } = await getSubCategory(slugSubCat);
 
+  console.log(subcategory);
+
   return (
     <div>
       <section className="main-container">
