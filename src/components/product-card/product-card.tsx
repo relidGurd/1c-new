@@ -30,7 +30,8 @@ const ProductCard = ({ product }: { product: any }) => {
                 className={styles.product_card__description}
                 variant="p"
                 size="16"
-                weight="regular">
+                weight="regular"
+              >
                 {product.description}
               </Typography>
             )}

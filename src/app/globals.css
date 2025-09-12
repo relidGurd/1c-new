@@ -46,6 +46,7 @@ h3 {
   padding-right: 60px;
   width: 100%;
   box-sizing: border-box;
+  max-width: 1840px;
 }
 
 h1,

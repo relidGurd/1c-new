@@ -11,6 +11,7 @@ const ProductPage = async ({
 
   const { data } = await getProduct(slug, qweryProduct);
 
+  console.log(data);
   return (
     <div>
       <ProductClientPage product={data} />

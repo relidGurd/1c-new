@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@strapi/blocks-react-renderer": "^1.0.2",
     "classnames": "^2.5.1",
     "formik": "^2.4.6",
     "motion": "^12.23.12",

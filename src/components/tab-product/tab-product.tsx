@@ -28,7 +28,10 @@ const TabProduct: React.FC<Props> = ({
       <div className={classNames(styles.tab_btn__primary)}>
         {items.map((el: any, index: number) => (
           <button
-            className={className}
+            className={classNames(
+              className,
+              index === activeIndex ? styles.activeBtn : ""
+            )}
             key={index}
             onClick={() => setActiveIndex(index)}
           >

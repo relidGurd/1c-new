@@ -1,0 +1,26 @@
+.product_variants_card {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 16px;
+  align-items: center;
+}
+
+.popup_btn {
+  padding: 16px;
+  background-color: var(--primary-red-color);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid var(--primary-red-color);
+  transition: 0.3s ease;
+}
+
+.popup_btn:hover {
+  padding: 16px;
+  background-color: transparent;
+  color: var(--primary-red-color);
+  border-radius: 10px;
+}
