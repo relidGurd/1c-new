@@ -41,6 +41,20 @@ const Header = () => {
           <button className={styles.header_button}>Оставить заявку</button>
         </div>
       </div>
+
+      <div className={classNames(styles.header_logo__mobile, "main-container")}>
+        <Link className={styles.header_logoSection} href={"/"}>
+          <Image
+            className={styles.header_logo}
+            width={80}
+            height={80}
+            alt="Logo"
+            src={"/logo1c.svg"}
+          />
+        </Link>
+
+        <div className={styles.header_burger}>burger</div>
+      </div>
     </header>
   );
 };

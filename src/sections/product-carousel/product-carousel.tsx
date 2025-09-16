@@ -18,8 +18,10 @@ const ProductCarousel = ({ products }: { products: any }) => {
         <div className={styles.productCarousel_swiperMain}>
           <Swiper
             wrapperTag="ul"
+            className="example"
             slidesPerView={1}
             spaceBetween={16}
+            autoHeight={true}
             breakpoints={{
               "1024": {
                 slidesPerView: 2,
@@ -30,7 +32,7 @@ const ProductCarousel = ({ products }: { products: any }) => {
             }}
           >
             {products.map((el: any) => (
-              <SwiperSlide tag="li">
+              <SwiperSlide style={{ height: "100%" }} tag="li">
                 <Link href={`/product/${el.slug}`}>
                   <ProductCard product={{ ...el }} />
                 </Link>

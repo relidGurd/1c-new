@@ -34,10 +34,8 @@ const Special = () => {
                 "640": {
                   slidesPerView: 1.5,
                 },
-                "1024": {
-                  slidesPerView: 2.5,
-                },
-                "1240": {
+
+                "1530": {
                   slidesPerView: 3.5,
                 },
               }}

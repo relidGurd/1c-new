@@ -9,6 +9,10 @@
   margin-top: 40px;
 }
 
+.example .swiper-slide {
+  height: 100% !important;
+}
+
 @media screen and (max-width: 1024px) {
   .productCarousel_container {
     padding: 24px;

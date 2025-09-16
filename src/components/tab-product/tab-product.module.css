@@ -14,3 +14,34 @@
   color: white;
   transition: 0.3s ease;
 }
+
+.mobileContainer {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .desktopContainer {
+    display: none;
+  }
+  .mobileContainer {
+    display: block;
+  }
+
+  .desktiop_btn__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .mobile_btn {
+    width: 100%;
+  }
+
+  .mobile_сontent {
+    margin-top: 10px;
+  }
+
+  .mobile_item {
+    margin-bottom: 10px;
+  }
+}

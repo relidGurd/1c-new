@@ -24,23 +24,51 @@ const TabProduct: React.FC<Props> = ({
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className={styles.container}>
-      <div className={classNames(styles.tab_btn__primary)}>
-        {items.map((el: any, index: number) => (
-          <button
-            className={classNames(
-              className,
-              index === activeIndex ? styles.activeBtn : ""
-            )}
-            key={index}
-            onClick={() => setActiveIndex(index)}
-          >
-            {getTabLabel(el)}
-          </button>
-        ))}
+    <div>
+      <div className={styles.desktopContainer}>
+        <div className={classNames(styles.tab_btn__primary)}>
+          {items.map((el: any, index: number) => (
+            <button
+              className={classNames(
+                className,
+                index === activeIndex ? styles.activeBtn : ""
+              )}
+              key={index}
+              onClick={() => setActiveIndex(index)}
+            >
+              {getTabLabel(el)}
+            </button>
+          ))}
+        </div>
+        <ComponentsSelect component={items[activeIndex]} />
       </div>
+      <div className={styles.mobileContainer}>
+        <div className={styles.mobile_btn__list}>
+          {items.map((el: any, index: number) => {
+            const isActive = index === activeIndex;
+            return (
+              <div key={index} className={styles.mobile_item}>
+                <button
+                  className={classNames(
+                    className,
+                    styles.mobile_btn,
+                    isActive ? styles.activeBtn : ""
+                  )}
+                  onClick={() => setActiveIndex(isActive ? -1 : index)} // повторный клик сворачивает
+                >
+                  {getTabLabel(el)}
+                </button>
 
-      <ComponentsSelect component={items[activeIndex]} />
+                {isActive && (
+                  <div className={styles.mobile_сontent}>
+                    <ComponentsSelect component={el} />
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };

@@ -23,8 +23,8 @@ const ComponentsSelect: React.FC<Props> = ({ component }) => {
           ))}
         </ul>
       );
-    case "all.tab-related-news":
-      return <div>news</div>;
+    // case "all.tab-related-news":
+    //   return <div>news</div>;
     case "all.tab-description":
       return <Wysiwig elements={component.description} />;
     default:
@@ -34,14 +34,14 @@ const ComponentsSelect: React.FC<Props> = ({ component }) => {
 
 export function getTabLabel(item: any): any {
   switch (item.__component) {
-    case "all.tab-related-news":
-      return "Новости";
+    // case "all.tab-related-news":
+    //   return "Новости";
     case "all.tab-product-variants":
       return "Варианты";
     case "all.tab-description":
       return "Описание";
-    case "all.tab-related-products":
-      return "Связанные продукты";
+    // case "all.tab-related-products":
+    //   return "Связанные продукты";
     default:
       return null;
   }

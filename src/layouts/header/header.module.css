@@ -71,9 +71,25 @@
   border: 1px solid #ff7a7a;
   color: white;
 }
-
+.header_logo__mobile {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   .header_logoMain {
     display: none;
+  }
+
+  .header_logo__mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_burger {
+    background-color: white;
+    border-radius: 10px;
+
+    height: 100%;
+    padding: 16px;
   }
 }
