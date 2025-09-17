@@ -82,14 +82,31 @@
   .header_logo__mobile {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 20px;
   }
 
   .header_burger {
     background-color: white;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+  }
 
-    height: 100%;
-    padding: 16px;
+  .mobile_menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .mobile_list {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }

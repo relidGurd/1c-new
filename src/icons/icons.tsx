@@ -66,4 +66,17 @@ const PreloaderGear = ({ className }: { className?: string }) => {
   );
 };
 
-export { BreadcrumbsArrow, CloseIcon, PreloaderGear };
+const BurgerIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+    >
+      <path fill="#d20a11" d="M21 18H3v-2h18v2Zm0-5H3v-2h18v2Zm0-5H3V6h18v2Z" />
+    </svg>
+  );
+};
+
+export { BreadcrumbsArrow, CloseIcon, PreloaderGear, BurgerIcon };
