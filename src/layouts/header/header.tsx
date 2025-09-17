@@ -32,7 +32,7 @@ const Header = () => {
                 <Link href={"/"}>Партнерам</Link>
               </li>
               <li className={styles.header_li}>
-                <Link href={"/"}>Контакты</Link>
+                <Link href={"/contacts"}>Контакты</Link>
               </li>
             </ul>
           </nav>
