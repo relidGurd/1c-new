@@ -2,6 +2,9 @@
   padding: 48px;
   position: relative;
   z-index: 1;
+  -webkit-box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
+  -moz-box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
+  box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
 }
 
 .contact_us_section__main {

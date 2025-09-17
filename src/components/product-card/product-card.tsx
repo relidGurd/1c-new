@@ -19,7 +19,7 @@ const ProductCard = ({ product }: { product: any }) => {
       <div className={styles.product_card__info}>
         <div>
           <Typography color="green" variant="span" size="12" weight="bold">
-            {product.article}
+            От: {product.price} руб.
           </Typography>
           <div>
             <Typography variant="p" size="24" weight="bold">

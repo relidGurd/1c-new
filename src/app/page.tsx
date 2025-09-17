@@ -1,3 +1,4 @@
+import RiseUpAnimation from "@/animation/rise-up-animation/rise-up-animation";
 import { getCategory } from "@/api/category/category";
 import { getProducts } from "@/api/product/product";
 import ContactUsSection from "@/sections/contact-us-section/contact-us-section";
@@ -25,10 +26,15 @@ export default async function Home() {
   return (
     <main>
       <HeroSection hero_product={popular_products[0]} />
+
       <Offers data={subcategories} />
+
       <Special />
+
       <ProductCarousel products={popular_products} />
+
       <ContactUsSection />
+
       {/* <NewsSection /> */}
     </main>
   );

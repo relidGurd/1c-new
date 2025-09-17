@@ -3,6 +3,9 @@
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  -webkit-box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
+  -moz-box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
+  box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
 }
 
 .productCarousel_swiperMain {

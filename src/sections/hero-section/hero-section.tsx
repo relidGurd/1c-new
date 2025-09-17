@@ -7,8 +7,10 @@ import Typography from "@/ui-kit/typography/typography";
 import ProductCard from "@/components/product-card/product-card";
 import Popup from "@/components/popup/popup";
 import ConsultationForm from "@/forms/consultation-form/consultation-form";
+import Link from "next/link";
 
 const HeroSection = ({ hero_product }: { hero_product: any }) => {
+  console.log(hero_product);
   return (
     <section className="main-container">
       <div className={styles.hero_mainContainer}>
@@ -121,7 +123,9 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
           </Swiper>
         </div>
         <div>
-          <ProductCard product={hero_product} />
+          <Link href={`/product/${hero_product.slug}`}>
+            <ProductCard product={hero_product} />
+          </Link>
         </div>
       </div>
     </section>

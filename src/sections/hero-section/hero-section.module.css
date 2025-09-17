@@ -5,6 +5,9 @@
   display: grid;
   grid-template-columns: 1fr 0.35fr;
   gap: 16px;
+  -webkit-box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
+  -moz-box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
+  box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
 }
 
 .hero_swiper {
