@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { strapi_site_url } from "../../../test";
 
 async function getSubCategories(qwery?: string) {
-  const url = `${strapi_site_url}/api/categories?${qwery}`;
+  const url = `${strapi_site_url}/api/subcategories?${qwery}`;
 
   try {
     const response = await fetch(url);

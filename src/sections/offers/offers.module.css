@@ -24,6 +24,7 @@
   font-weight: bold;
   border: 1px solid transparent;
   transition: 0.2s ease-in-out;
+  text-align: center;
 }
 
 .offers_btn:hover {

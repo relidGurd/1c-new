@@ -47,11 +47,12 @@ const ProductClientPage: React.FC<any> = ({ product }) => {
                 )}
               </div>
               <div className={styles.product_prices}>
-                <Typography variant="span" size="24" weight="bold">
-                  Стоимость: {product.price} ₽./мес.
-                </Typography>
                 <Typography variant="span" size="18">
                   Описание: {product.description}
+                </Typography>
+
+                <Typography variant="span" size="24" weight="bold">
+                  Стоимость: {product.price} ₽./мес.
                 </Typography>
                 <div className={styles.product_btn__container}>
                   <button className={styles.product_btn}>

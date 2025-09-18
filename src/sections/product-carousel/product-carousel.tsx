@@ -15,7 +15,10 @@ const ProductCarousel = ({ products }: { products: any }) => {
             <Typography variant="h2" size="64" weight="bold">
               Популярные продукты
             </Typography>
-            <Link href={"/category/programmnye-produkty-1-s"}>
+            <Link
+              className={styles.productCarousel_lookALl}
+              href={"/category/programmnye-produkty-1-s"}
+            >
               Смотреть все
             </Link>
           </div>

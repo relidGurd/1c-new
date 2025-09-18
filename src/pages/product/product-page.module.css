@@ -9,7 +9,13 @@
 
 .product_main__info {
   position: sticky;
-  top: 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  top: 20px;
+  -webkit-box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
+  -moz-box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
+  box-shadow: -25px 19px 56px -40px rgba(34, 60, 80, 0.24);
 }
 
 .title_product {
@@ -35,6 +41,7 @@
   justify-content: top;
   flex-direction: column;
   gap: 10px;
+  margin-top: 25px;
 }
 
 .product_btn {
@@ -44,10 +51,13 @@
   font-weight: bold;
   border-radius: 10px;
   border: 1px solid var(--primary-red-color);
+  width: 100%;
+  display: block;
 }
 
 .product_btn__container {
   margin-top: 20px;
+  width: 100%;
 }
 
 .tab_btn {

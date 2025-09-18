@@ -16,6 +16,16 @@
   height: 100% !important;
 }
 
+.productCarousel_lookALl {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--primary-red-color);
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--primary-red-color);
+}
+
 @media screen and (max-width: 1024px) {
   .productCarousel_container {
     padding: 24px;

@@ -10,7 +10,6 @@ import ConsultationForm from "@/forms/consultation-form/consultation-form";
 import Link from "next/link";
 
 const HeroSection = ({ hero_product }: { hero_product: any }) => {
-  console.log(hero_product);
   return (
     <section className="main-container">
       <div className={styles.hero_mainContainer}>
@@ -31,7 +30,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                 <div className={styles.hero_slideImageContainer}>
                   <Image
                     className={styles.hero_slideImage}
-                    src={"/ban1.jpg"}
+                    src={"/ban2.png"}
                     fill
                     alt=""
                   />
@@ -44,7 +43,7 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                       weight="bold"
                       size="64"
                     >
-                      Заголовок 1
+                      Программные продукты&nbsp;«1С»
                     </Typography>
                     <Typography
                       variant="p"
@@ -53,7 +52,11 @@ const HeroSection = ({ hero_product }: { hero_product: any }) => {
                       size="24"
                       className={styles.hero_description}
                     >
-                      Программное обеспечение облегчающее жизнь!!
+                      Широкий спектр решений для автоматизации
+                      учёта,&nbsp;управления и аналитики на предприятиях любого
+                      масштаба. С их помощью можно эффективно вести
+                      бухгалтерский и налоговый учёт, управлять кадрами,
+                      финансами и складом.
                     </Typography>
                   </div>
 

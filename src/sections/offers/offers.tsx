@@ -39,7 +39,11 @@ const Offers = ({ data }: { data: any }) => {
             {data.map((el: any) => (
               <li key={el.id}>
                 <Link href={`/subcategory/${el.slug}`}>
-                  <CategoryCard title={el.title} description={el.description} />
+                  <CategoryCard
+                    title={el.title}
+                    description={el.description}
+                    image={el.image?.url}
+                  />
                 </Link>
               </li>
             ))}

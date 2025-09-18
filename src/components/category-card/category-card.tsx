@@ -3,6 +3,7 @@
 import Typography from "@/ui-kit/typography/typography";
 import styles from "./category-card.module.css";
 import Image from "next/image";
+import { strapi_site_url } from "../../../test";
 
 const CategoryCard = ({
   title,
@@ -13,15 +14,16 @@ const CategoryCard = ({
   description?: string;
   image?: string;
 }) => {
+  console.log(image);
   return (
     <div className={styles.category_card}>
       <div className={styles.category_imageContainer}>
         <Image
           className={styles.category_image}
-          src={"/iconCategory.png"}
+          src={image ? `${strapi_site_url}${image}` : "/iconCategory.png"}
           width={100}
           height={100}
-          alt=""
+          alt={title || "category image"}
         />
       </div>
       <div className={styles.category_info}>
