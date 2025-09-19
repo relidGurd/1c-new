@@ -9,8 +9,6 @@ import ProductCarousel from "@/sections/product-carousel/product-carousel";
 import Special from "@/sections/special/special";
 import qs from "qs";
 export default async function Home() {
-  const { data } = await getCategory("programmnye-produkty-1-s", "populate=*");
-
   const popularProductsQwery = qs.stringify({
     populate: {
       image: true,
@@ -36,7 +34,6 @@ export default async function Home() {
 
   const { data: subcategories } = await getSubCategories(subcategoriesQwery);
 
-  console.log(subcategories);
   return (
     <main>
       <HeroSection hero_product={popular_products[0]} />
